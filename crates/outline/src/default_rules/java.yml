@@ -307,3 +307,16 @@ rule:
         pattern: $NAME
 name: $NAME
 isPublic: true
+---
+id: java-module
+language: Java
+role: item
+symbolType: module
+rule:
+  all:
+    - kind: module_declaration
+    - has:
+        field: name
+        pattern: $NAME
+name: $NAME
+isExported: false
