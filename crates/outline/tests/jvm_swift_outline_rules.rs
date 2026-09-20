@@ -377,6 +377,8 @@ enum Outer {
 "#,
     r#"
 - Enum item private Outer
+  - EnumMember public A
+  - EnumMember public B
   - Enum public Inner
     - EnumMember public X
     - EnumMember public Y
